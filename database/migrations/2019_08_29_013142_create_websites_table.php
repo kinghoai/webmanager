@@ -19,8 +19,6 @@ class CreateWebsitesTable extends Migration
             $table->string('name');
             $table->string('domain_id')->nullable();
             $table->string('hosting_id')->nullable();
-            // $table->date('date_create');
-            // $table->date('date_expiration');
         });
     }
 

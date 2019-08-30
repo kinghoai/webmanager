@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    @if ($users)
+                        @foreach ($users as $user)
+                            <div>{{ $user->name}}</div>
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>
